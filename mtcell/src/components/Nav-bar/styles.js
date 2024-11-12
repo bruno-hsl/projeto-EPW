@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Titulo = styled.h1`
+export const NavBar = styled.div`
   color: red;
-  
+  width: 20px:
 `;
