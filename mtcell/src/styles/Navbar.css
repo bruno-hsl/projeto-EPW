@@ -1,0 +1,77 @@
+.Navbar{ /*Barra de navegação*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #000;
+  box-shadow: 0 4px 6px rgba(37, 206, 88, 0.897);
+}
+
+.Navbar_logo { /*Logo*/
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .logo_cell {
+    color: #00FF00; /*Cor da logo*/
+  }
+
+  .Navbar_links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    flex: 1; 
+    justify-content:center;
+  }
+
+  .Navbar_links a:hover {
+    color: #00FF00; /*Cor ao passar o mouse*/
+    font-weight: 500;
+  }
+
+  .Navbar_links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu { /*Menu dos produtos*/
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    list-style: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li {
+    padding: 5px 10px;
+  }
+  
+  .dropdown-menu li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover { /*Cor dos produtos*/
+    color: #00FF00;
+  }
+
+  @media (max-width: 768px) {
+    .Navbar_links {
+      display: none;
+    }
+    }
