@@ -7,10 +7,10 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="redesSociais">
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/stories/mtcellbrasilia/3504172713279654812/" target="_blank" rel="noopener noreferrer">
           <img src={instagramIcon} alt="Instagram"  />
         </a>
-        <a href="htt  ps://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/556185490894" target="_blank" rel="noopener noreferrer">
           <img src={whatsappIcon} alt="whatsapp"  />
         </a>
       </div>

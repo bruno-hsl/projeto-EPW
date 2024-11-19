@@ -1,41 +1,110 @@
 .quemSomos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px; 
-    padding: 10%; 
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10%;
+  flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+}
+
+.quemSomos a {
+  text-decoration: none;
+}
+
+.quemSomos_texto {
+  flex: 1;
+  max-width: 600px;
+}
+
+.quemSomos_texto h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.quemSomos_texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.quemSomos_imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quemSomos_foto {
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instagram {
+  background-color: #ee710c;
+  display: flex;
+  margin-top: 5vh;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 7px;
+  border-radius: 25px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.instagram:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.instagramFoto {
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 768px) {
+  .quemSomos {
+    flex-direction: column;
+    padding: 5%;
+    gap: 15px;
   }
-  
+
   .quemSomos_texto {
-    flex: 1; 
-    max-width: 600px;
+    max-width: 100%;
   }
-  
+
   .quemSomos_texto h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 2rem;
   }
-  
+
   .quemSomos_texto p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
+    font-size: 0.9rem;
   }
-  
+
   .quemSomos_imagem {
-    flex: 1;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  }
-  
-  .quemSomos_foto {
     width: 100%;
-    max-width: 400px;
-    max-height: 400px;
-    height: auto;
-    border-radius: 10px; 
-    box-shadow: 5 4px 6px rgba(0, 0, 0, 0.1); 
   }
-  
+
+  .quemSomos_foto {
+    max-width: 100%;
+    max-height: 300px;
+  }
+
+  .instagram {
+    width: 100px;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .instagramFoto {
+    width: 16px;
+    height: 16px;
+  }
+}

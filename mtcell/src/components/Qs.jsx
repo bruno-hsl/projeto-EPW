@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Qs.css';
 import FotoDaLoja from '../img/fotoTemporaria.jpg'
+import Instagram from '../img/instagramBlack.png'
 
 function Qs() {
   return (
@@ -13,6 +14,12 @@ function Qs() {
           amet, consectetur adipisicing elit. Nesciunt iste reiciendis at ipsam iusto, blanditiis doloremque molestias
           aspernatur, placeat ea laborum nihil quasi rerum? Consectetur fuga deserunt dolores excepturi nihil.
         </p>
+          <a href="https://www.instagram.com/stories/mtcellbrasilia/3504172713279654812/">
+        <div className='instagram'>
+          <p>Instagram</p>
+          <img className='instagramFoto' src={Instagram} alt="" />
+        </div>
+          </a>
       </div>
       <div className="quemSomos_imagem">
         <img className="quemSomos_foto" src={FotoDaLoja} alt="Imagem do lugar" />
