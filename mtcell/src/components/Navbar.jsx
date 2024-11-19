@@ -23,7 +23,7 @@ function Navbar() {
             <li><a href="/produtos/caixa_de_som">Caixa de som</a></li>
           </ul>
         </li>
-        <li><a href="/sobre">Sobre Nós</a></li>
+        <li><Link to="/sobre-nos">Sobre Nós</Link></li>
       </ul>
     </nav>
   );
