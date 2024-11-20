@@ -16,7 +16,7 @@ function Navbar() {
         <li class="dropdown">
           <a href="#">Produtos</a>
           <ul class="dropdown-menu">
-            <li><a href="/produtos/celulares">Celulares</a></li>
+            <li><Link to="/celulares">Celulares</Link></li>
             <li><a href="/produtos/tablets">Tablets</a></li>
             <li><a href="/produtos/relogios">Relógios</a></li>
             <li><a href="/produtos/videogames">Video games</a></li>
