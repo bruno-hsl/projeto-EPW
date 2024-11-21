@@ -1,11 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 
 function Navbar() {
+  const [isVisible, setIsVisible] = useState(true); //Visibilidade da Navbar
+  const [lastScrollPosition, setLastScrollPosition] = useState(0); // Salva a última posição do scroll
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPosition = window.scrollY;
+
+      if (currentScrollPosition > lastScrollPosition && currentScrollPosition > 50) {
+        // Esconder a navbar ao rolar para baixo
+        setIsVisible(false);
+      } else {
+        // Mostrar a navbar ao rolar para cima
+        setIsVisible(true);
+      }
+
+      // Atualizar a última posição do scroll
+      setLastScrollPosition(currentScrollPosition);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollPosition]);
+
   return (
-    <nav class="Navbar">
+    <nav class={`Navbar ${isVisible ? 'show' : 'hide'}`}>
 
       <div class="Navbar_logo">
         <span>MT</span>

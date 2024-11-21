@@ -8,6 +8,7 @@
     gap: 30px;
     position: relative;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 /*Primeira parte*/
@@ -38,9 +39,9 @@
     background-color: #FF8C00;
     color: #000000;
     border: none;
-    padding: 15px 30px;
+    padding: 15px 15px;
     border-radius: 80px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     cursor: pointer;
     margin-top: 20px;
     position: relative;
@@ -58,9 +59,9 @@
 }
 
 .icon_desconto {
-    margin-left: 10px;
-    width: 140px;
-    animation: girar 1s infinite linear;
+    margin-left: 5px;
+    width: 120px;
+    animation: girar 3s infinite linear;
     flex-shrink: 0;
     display: block;
 }
@@ -76,15 +77,17 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .botao_desconto {
-        padding: 12px 20px; /* Ajusta o padding para telas pequenas */
-        height: 50px; /* Ajusta a altura do botão */
+        display:flex;
+        height: 50px;
+        margin-top: 20px;
     }
 
     .icon_desconto {
         width: 120px; /* Reduz o tamanho do ícone em dispositivos móveis */
-        margin-left: 5px;
+        margin-left: -15px;
+        padding: -60px;
     }
 }
 
