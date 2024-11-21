@@ -146,7 +146,7 @@ function Celulares() {
       {/* Carrossel Apple */}
       <div className="Titdiv">
         <h1 className="tit">Apple</h1>
-        <img className="iconsP" src={appleicon} alt="AppleIcon" />
+        <img className="cell-icons" src={appleicon} alt="AppleIcon" />
       </div>
 
       <div className="carousel-container">
@@ -175,7 +175,7 @@ function Celulares() {
       {/* Carrossel Xiaomi */}
       <div className="Titdiv">
         <h1 className="tit"> Xiaomi </h1>
-        <img className="iconsP" src={redicon} alt="RedmiIcon" />
+        <img className="cell-icons" src={redicon} alt="RedmiIcon" />
       </div>
 
       <div className="carousel-container">

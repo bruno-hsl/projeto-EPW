@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Mt.css';
-import desconto from '../img/desconto.png';
-import cartao from '../img/cartao.png';
-import qualidade from '../img/qualidade.png';
+import desconto from '../img/desconto.svg';
+import cartao from '../img/cartao.svg';
+import qualidade from '../img/qualidade.svg';
 
 function Mt() {
     return ( 

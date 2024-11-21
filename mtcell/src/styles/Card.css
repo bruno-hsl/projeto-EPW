@@ -66,6 +66,12 @@
     display: block;
 }
 
+.icon{
+    color: #000000;
+}
+.icon:hover{
+    color: #FF8C00;
+}
 
 
 @keyframes girar {
