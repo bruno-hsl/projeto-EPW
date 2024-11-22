@@ -43,8 +43,8 @@ function Navbar() {
           <a href="#">Produtos</a>
           <ul class="dropdown-menu">
             <li><Link to="/celulares">Celulares</Link></li>
-            <li><a href="/produtos/tablets">Tablets</a></li>
-            <li><a href="/produtos/relogios">Relógios</a></li>
+            <li><a href="/tablets">Tablets</a></li>
+            <li><a href="/relogios">Relógios</a></li>
             <li><a href="/produtos/videogames">Video games</a></li>
             <li><a href="/produtos/caixa_de_som">Caixa de som</a></li>
           </ul>

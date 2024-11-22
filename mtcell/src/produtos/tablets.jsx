@@ -2,109 +2,111 @@ import React, { useState } from 'react';
 import '../styles/Celular.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import iphone15r from '../img/iphone.png';
-import iphone16r from '../img/iphone2.png';
-import iphone15a from '../img/iphone3.png';
-import iphone13b from '../img/iphone4.png';
-import iphone11v from '../img/iphone5.png';
-import iphone13p from '../img/iphone6.png';
+
+import ipad from '../img/ipad.png';
+import ipad2 from '../img/ipad2.png';
+import ipad3 from '../img/ipad3.png';
+import ipad4 from '../img/ipad4.png';
+import ipad5 from '../img/ipad5.png';
+import ipad6 from '../img/ipad6.png';
 import appleicon from '../img/AppleLogo.png';
-import xiaomi from '../img/xiaomi.png';
-import xiaomi2 from '../img/xiaomi2.png';
-import xiaomi3 from '../img/xiaomi3.png';
-import xiaomi4 from '../img/xiaomi4.png';
-import xiaomi5 from '../img/xiaomi5.png';
-import xiaomi6 from '../img/xiaomi6.png';
-import redicon from '../img/RedmiLogo.png';
+
+import tab from '../img/tab.png';
+import tab2 from '../img/tab2.png';
+import tab3 from '../img/tab3.png';
+import tab4 from '../img/tab4.png';
+import tab5 from '../img/tab5.png';
+import tab6 from '../img/tab6.png';
+import samicon from '../img/samsungLogo.png';
 
 function Celulares() {
   const appleItems = [
     {
       id: 1,
-      image: iphone16r,
-      name: 'iPhone 16',
-      description: '128 GB',
-      price: 'R$5590,00',
+      image: ipad,
+      name: 'iPad (10ª geração)',
+      description: '64 GB',
+      price: 'R$3590,00',
     },
     {
       id: 2,
-      image: iphone15r,
-      name: 'iPhone 15',
-      description: '128 GB',
-      price: 'R$3590,00',
+      image: ipad2,
+      name: 'iPad Pro 2018',
+      description: '64 GB',
+      price: 'R$2311,25',
     },
     {
       id: 3,
-      image: iphone15a,
-      name: 'iPhone 15',
-      description: '128 GB',
-      price: 'R$3590,00',
+      image: ipad3,
+      name: 'iPad (7ª geração)',
+      description: '32 GB',
+      price: 'R$839,93',
     },
     {
       id: 4,
-      image: iphone13b,
-      name: 'iPhone 13',
-      description: '128 GB',
-      price: 'R$2850,00',
+      image: ipad4,
+      name: 'iPad (6ª geração)',
+      description: '32 GB',
+      price: 'R$666,15',
     },
     {
       id: 5,
-      image: iphone13p,
-      name: 'iPhone 13',
+      image: ipad5,
+      name: 'iPad (9ª geração)',
       description: '64 GB',
-      price: 'R$1590,00',
+      price: 'R$1185,98',
     },
     {
       id: 6,
-      image: iphone11v,
-      name: 'iPhone 11',
-      description: '128 GB',
-      price: 'R$980,00',
+      image: ipad6,
+      name: 'iPad (5ª Geração)',
+      description: '32 GB',
+      price: 'R$631,39',
     },
   ];
 
   const samsungItems = [
     {
       id: 1,
-      image: xiaomi,
-      name: 'Redmi Note 13',
-      description: '256 GB',
-      price: 'R$1190,74',
+      image: tab,
+      name: 'GALAXY TAB A9',
+      description: '64 GB',
+      price: 'R$979,90',
     },
     {
       id: 2,
-      image: xiaomi2,
-      name: 'Redmi 14c',
-      description: '256 GB',
-      price: 'R$1299,00',
+      image: tab2,
+      name: 'Galaxy Tab A7 Lite',
+      description: '32 GB',
+      price: 'R$1842,00',
     },
     {
       id: 3,
-      image: xiaomi3,
-      name: 'Redmi 13c',
-      description: '256 GB',
-      price: 'R$1349,90',
+      image: tab3,
+      name: 'Galaxy Tab A9+ Plus',
+      description: '128 GB',
+      price: 'R$1.807,95',
     },
     {
       id: 4,
-      image: xiaomi4,
-      name: 'Redmi Note 13',
-      description: '256 GB',
-      price: 'R$1169,10',
+      image: tab4,
+      name: 'Galaxy Tab S6 Lite',
+      description: '128 GB',
+      price: 'R$2290,00',
     },
     {
       id: 5,
-      image: xiaomi5,
-      name: 'Redmi Note 13 Pro',
+      image: tab5,
+      name: 'Galaxy Tab A9',
       description: '256 GB',
-      price: 'R$1599,00',
+      price: 'R$1384,28',
     },
     {
       id: 6,
-      image: xiaomi6,
-      name: 'Redmi 13c',
-      description: '256 GB',
-      price: 'R$1125,00',
+      image: tab6,
+      name: 'Galaxy Tab S6 Lite',
+      description: '64 GB',
+      price: 'R$1852,00',
     },
   ];
 
@@ -140,7 +142,7 @@ function Celulares() {
       <Navbar />
 
       <center>
-        <h1 className="verde">Celulares</h1>
+        <h1 className="verde">Tablets</h1>
       </center>
 
       {/* Carrossel Apple */}
@@ -172,10 +174,10 @@ function Celulares() {
         </button>
       </div>
 
-      {/* Carrossel Xiaomi */}
-      <div className="Titdiv">
-        <h1 className="tit"> Xiaomi </h1>
-        <img className="cell-icons" src={redicon} alt="RedmiIcon" />
+      {/* Carrossel Samsung */}
+      <div className="Titdiv2">
+        <h1 className="tit"> Samsung </h1>
+        <img className="cell-icons" src={samicon} alt="SaumsungIcon" />
       </div>
 
       <div className="carousel-container">

@@ -2,109 +2,111 @@ import React, { useState } from 'react';
 import '../styles/Celular.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import iphone15r from '../img/iphone.png';
-import iphone16r from '../img/iphone2.png';
-import iphone15a from '../img/iphone3.png';
-import iphone13b from '../img/iphone4.png';
-import iphone11v from '../img/iphone5.png';
-import iphone13p from '../img/iphone6.png';
+
+import watch from '../img/watch.png';
+import watch2 from '../img/watch2.png';
+import watch3 from '../img/watch3.png';
+import watch4 from '../img/watch4.png';
+import watch5 from '../img/watch5.png';
+import watch6 from '../img/watch6.png';
 import appleicon from '../img/AppleLogo.png';
-import xiaomi from '../img/xiaomi.png';
-import xiaomi2 from '../img/xiaomi2.png';
-import xiaomi3 from '../img/xiaomi3.png';
-import xiaomi4 from '../img/xiaomi4.png';
-import xiaomi5 from '../img/xiaomi5.png';
-import xiaomi6 from '../img/xiaomi6.png';
-import redicon from '../img/RedmiLogo.png';
+
+import smart from '../img/smart.png';
+import smart2 from '../img/smart2.png';
+import smart3 from '../img/smart3.png';
+import smart4 from '../img/smart4.png';
+import smart5 from '../img/smart5.png';
+import smart6 from '../img/smart6.png';
+import samicon from '../img/samsungLogo.png';
 
 function Celulares() {
   const appleItems = [
     {
       id: 1,
-      image: iphone16r,
-      name: 'iPhone 16',
-      description: '128 GB',
-      price: 'R$5590,00',
+      image: watch,
+      name: 'Apple Watch Ultra 2',
+      description: 'GPS • Celular • Caixa de titânio',
+      price: 'R$6744,05',
     },
     {
       id: 2,
-      image: iphone15r,
-      name: 'iPhone 15',
-      description: '128 GB',
-      price: 'R$3590,00',
+      image: watch2,
+      name: 'Apple Watch SE',
+      description: 'GPS • Caixa de alumínio',
+      price: 'R$2654,10',
     },
     {
       id: 3,
-      image: iphone15a,
-      name: 'iPhone 15',
-      description: '128 GB',
-      price: 'R$3590,00',
+      image: watch3,
+      name: 'Apple Watch Ultra 2',
+      description: 'GPS • Cellular • Caixa de titânio',
+      price: 'R$7874,10',
     },
     {
       id: 4,
-      image: iphone13b,
-      name: 'iPhone 13',
-      description: '128 GB',
-      price: 'R$2850,00',
+      image: watch4,
+      name: 'Apple Watch SE',
+      description: 'GPS • Caixa de alumínio',
+      price: 'R$2287,12',
     },
     {
       id: 5,
-      image: iphone13p,
-      name: 'iPhone 13',
-      description: '64 GB',
-      price: 'R$1590,00',
+      image: watch5,
+      name: 'Apple Watch Series 9',
+      description: 'GPS • Caixa de alumínio',
+      price: 'R$3239,11',
     },
     {
       id: 6,
-      image: iphone11v,
-      name: 'iPhone 11',
-      description: '128 GB',
-      price: 'R$980,00',
+      image: watch6,
+      name: 'Apple Watch Series 10',
+      description: 'GPS • Caixa de alumínio',
+      price: 'R$3998,99',
     },
   ];
 
   const samsungItems = [
     {
       id: 1,
-      image: xiaomi,
-      name: 'Redmi Note 13',
-      description: '256 GB',
-      price: 'R$1190,74',
+      image: smart,
+      name: 'Smartwatch Samsung Galaxy Fit3',
+      description: 'Grafite',
+      price: 'R$279,90',
     },
     {
       id: 2,
-      image: xiaomi2,
-      name: 'Redmi 14c',
-      description: '256 GB',
-      price: 'R$1299,00',
+      image: smart2,
+      name: 'Samsung Smartwatch Galaxy Watch6',
+      description: 'Grafite',
+      price: 'R$1699,90',
     },
     {
       id: 3,
-      image: xiaomi3,
-      name: 'Redmi 13c',
-      description: '256 GB',
-      price: 'R$1349,90',
-    },
-    {
-      id: 4,
-      image: xiaomi4,
-      name: 'Redmi Note 13',
-      description: '256 GB',
-      price: 'R$1169,10',
-    },
-    {
-      id: 5,
-      image: xiaomi5,
-      name: 'Redmi Note 13 Pro',
-      description: '256 GB',
+      image: smart3,
+      name: 'Samsung Galaxy Watch7 Smartwatch',
+      description: 'Creme',
       price: 'R$1599,00',
     },
     {
+      id: 4,
+      image: smart4,
+      name: 'Samsung Galaxy Watch5 Pro BT',
+      description: 'Preto',
+      price: 'R$1469,24',
+    },
+    {
+      id: 5,
+      image: smart5,
+      name: 'Samsung Smartwatch Galaxy Watch6 BT',
+      description: 'Prata',
+      price: 'R$1899,00',
+    },
+    {
       id: 6,
-      image: xiaomi6,
-      name: 'Redmi 13c',
-      description: '256 GB',
-      price: 'R$1125,00',
+      image: smart6,
+      name: 'Smartwatch Samsung Galaxy Fit3',
+      description: 'Prata',
+      price: 'R$309,90',
     },
   ];
 
@@ -140,7 +142,7 @@ function Celulares() {
       <Navbar />
 
       <center>
-        <h1 className="verde">Celulares</h1>
+        <h1 className="verde">Relógios</h1>
       </center>
 
       {/* Carrossel Apple */}
@@ -172,10 +174,10 @@ function Celulares() {
         </button>
       </div>
 
-      {/* Carrossel Xiaomi */}
-      <div className="Titdiv">
-        <h1 className="tit"> Xiaomi </h1>
-        <img className="cell-icons" src={redicon} alt="RedmiIcon" />
+      {/* Carrossel Samsung */}
+      <div className="Titdiv2">
+        <h1 className="tit"> Samsung </h1>
+        <img className="cell-icons" src={samicon} alt="SaumsungIcon" />
       </div>
 
       <div className="carousel-container">
