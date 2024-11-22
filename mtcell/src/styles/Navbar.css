@@ -1,7 +1,7 @@
 .Navbar{ /*Barra de navegação*/
   position: relative;
   display: flex;
-  width: 140%;
+  width: 100%;
   z-index: 1000;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +40,7 @@
     list-style: none;
     gap: 40px;
     flex: 1; 
-    justify-content:center;
+    justify-content:right;
   }
 
   .Navbar_links a:hover {
@@ -50,8 +50,10 @@
 
   .Navbar_links a {
     text-decoration:none;
+    display: flex;
     color: #fff;
     font-weight: 500;
+    margin-right: 20px;
     transition: color 0.3s ease;
   }
 
@@ -77,16 +79,54 @@
   }
 
   .dropdown-menu li {
-    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
   }
   
   .dropdown-menu li a {
     color: #000000;
-    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .dropdown-item-image {
+    width: 50px; /*Tamanho da imagem dos produtos*/
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
   }
   
   .dropdown-menu li a:hover { /*Cor dos produtos*/
     color: #00FF00;
+  }
+
+  .Navbar-contato a {
+    display: inline-flex;
+    background-color: #00FF00;
+    color: rgb(0, 0, 0);
+    padding: 9px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .Navbar-contato a:hover {
+    background-color: #FF8C00;
+    transform: scale(1.05);
+  }
+  
+  .Navbar-contato {
+    margin-left: center;
+  }
+
+  .Navbar-contato-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
   }
 
   @media (max-width: 768px) {
