@@ -6,6 +6,7 @@ import SobreNos from './pages/SobreNos';
 import Celulares from './produtos/celulares';
 import Tablets from './produtos/tablets';
 import Relogios from './produtos/relogios';
+import CaixaSom from './produtos/caixa_de_som';
 
 
 createRoot(document.getElementById('root')).render(
@@ -17,6 +18,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/celulares" element={<Celulares />} />
         <Route path="/tablets" element={<Tablets />} />
         <Route path="/relogios" element={<Relogios />} />
+        <Route path="/produtos/caixa_de_som" element={<CaixaSom />} />
+        
       </Routes>
     </Router>
   </StrictMode>
