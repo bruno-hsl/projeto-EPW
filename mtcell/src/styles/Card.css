@@ -30,6 +30,12 @@
 .cor_letras {
     color: #FF8C00; /* cor das letras 'melhor' e 'qualidade' */
     font-weight: bold;
+    transition: color 0.3s ease;
+    animation: girar 3s infinite linear; /*Coloquei isso e funcionou para as letras mudarem de cor, então eu deixei ai kkkkk*/
+}
+
+.cor_letras:hover {
+    color: #45a049;
 }
 
 .botao_desconto {
