@@ -9,10 +9,7 @@ function Qs() {
       <div className="quemSomos_texto">
         <h1>Quem nós somos?</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus minus eligendi? Reprehenderit tenetur sed
-          obcaecati a ut sit amet sint adipisci fuga. Eaque, iste deserunt numquam pariatur animi ut? Lorem ipsum dolor sit
-          amet, consectetur adipisicing elit. Nesciunt iste reiciendis at ipsam iusto, blanditiis doloremque molestias
-          aspernatur, placeat ea laborum nihil quasi rerum? Consectetur fuga deserunt dolores excepturi nihil.
+         A MT Cell é uma loja de telefones e acessórios em Brasília. Aqui, você encontrará serviço de assistência técnica, além de diversos itens essenciais para o dia a dia moderno, como carregadores, fones de ouvido e relógios inteligentes, Iphone novos e Seminovos e toda linha de Xiaomi.
         </p>
           <a href="https://www.instagram.com/stories/mtcellbrasilia/3504172713279654812/">
         <div className='instagram'>
