@@ -17,6 +17,11 @@
   opacity: 1;
 }
 
+.Navbar_logo > a{
+  text-decoration: none;
+  color: unset;
+}
+
 /*Barra não visível*/
 .Navbar.hide {
   transform: translateY(-100%);

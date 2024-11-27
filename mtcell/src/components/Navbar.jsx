@@ -55,8 +55,10 @@ function Navbar() {
     <nav class={`Navbar ${isVisible ? 'show' : 'hide'}`}>
 
       <div class="Navbar_logo">
-        <span>MT</span>
-        <span class="logo_cell">cell</span>
+        <a href="/">
+          <span>MT</span>
+          <span class="logo_cell">cell</span>
+        </a>
       </div>
 
       <div className="hamburger-menu" onClick={toggleMobileMenu}>

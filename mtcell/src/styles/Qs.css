@@ -49,13 +49,19 @@
   background-color: #ee710c;
   display: flex;
   margin-top: 5vh;
-  width: 130px;
+  width: 150px;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 7px;
+  padding: 0.5rem 2rem;
   border-radius: 25px;
   transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+.instagram > p{
+  color: black;
+  font-weight: bold;
 }
 
 .instagram:hover {

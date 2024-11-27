@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Qs.css';
-import FotoDaLoja from '../img/fotoTemporaria.jpg'
+import FotoDaLoja from '../img/quemSomos_foto.jpeg'
 import Instagram from '../img/instagramBlack.png'
 
 function Qs() {
@@ -11,7 +11,7 @@ function Qs() {
         <p>
          A MT Cell é uma loja de telefones e acessórios em Brasília. Aqui, você encontrará serviço de assistência técnica, além de diversos itens essenciais para o dia a dia moderno, como carregadores, fones de ouvido e relógios inteligentes, Iphone novos e Seminovos e toda linha de Xiaomi.
         </p>
-          <a href="https://www.instagram.com/stories/mtcellbrasilia/3504172713279654812/">
+          <a target={'_blank'} href="https://www.instagram.com/mtcellbrasilia/">
         <div className='instagram'>
           <p>Instagram</p>
           <img className='instagramFoto' src={Instagram} alt="" />
