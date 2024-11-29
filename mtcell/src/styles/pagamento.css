@@ -1,0 +1,83 @@
+.page {
+    background: linear-gradient(to right, #00ff2a, #00a2ff);
+    height: 100vh;
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.titR {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Caixa do Formulário */
+.form-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.titRdois {
+  margin-bottom: 20px;
+  color: #00ff0d;
+  text-align: center;
+}
+
+/* Estilo dos campos do formulário */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #00490c;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button.submit-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .9s;
+}
+
+button.submit-btn:hover {
+  background-color: #1c531f;
+}
+
+/* Ajustes responsivos */
+input[type="email"], input[type="text"], input[type="date"] {
+  width: 100%;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 80%;
+    max-width: 350px;
+  }
+}

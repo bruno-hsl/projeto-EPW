@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Celular.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -15,6 +16,8 @@ import CapaCharge5 from '../img/CapaCharge5.png';
 import CapaGo3 from '../img/CapaGo3.png';
 
 function Celulares() {
+  const navigate = useNavigate();
+
   const appleItems = [
     {
       id: 1,
@@ -118,6 +121,10 @@ function Celulares() {
     }
   };
 
+  const handleClick = () => {
+    navigate('/pagamentoUM');
+  };
+
   return (
     
     <div>
@@ -145,8 +152,9 @@ function Celulares() {
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <p className="price">{item.price}</p>
-              <button className="buy-btn">Comprar</button>
-              <button className="details-btn">Saiba mais →</button>
+              <button className="buy-btn" onClick={handleClick}>
+              Reservar
+              </button>
             </div>
           ))}
         </div>
@@ -170,8 +178,9 @@ function Celulares() {
               <h3>{item.name}</h3>
               <p>{item.description}</p>
               <p className="price">{item.price}</p>
-              <button className="buy-btn">Comprar</button>
-              <button className="details-btn">Saiba mais →</button>
+              <button className="buy-btn" onClick={handleClick}>
+              Reservar
+              </button>
             </div>
           ))}
         </div>

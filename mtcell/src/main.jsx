@@ -7,7 +7,7 @@ import Celulares from './produtos/celulares';
 import Tablets from './produtos/tablets';
 import Relogios from './produtos/relogios';
 import CaixaSom from './produtos/caixa_de_som';
-
+import PagamentoUM from './pages/PagamentoUM';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,7 +19,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/tablets" element={<Tablets />} />
         <Route path="/relogios" element={<Relogios />} />
         <Route path="/produtos/caixa_de_som" element={<CaixaSom />} />
-        
+        <Route path="/pagamentoUM" element={<PagamentoUM />} />
+
       </Routes>
     </Router>
   </StrictMode>
