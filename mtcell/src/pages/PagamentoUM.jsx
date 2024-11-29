@@ -16,18 +16,43 @@ function PagamentoUM() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert('Formulário enviado');
+
+    try {
+      // Alterar a URL para apontar para o servidor back-end que está rodando na porta 3000
+      const response = await fetch('http://localhost:3000/pagamentoUM', { // URL corrigida
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          nome: formData.nome,
+          email: formData.email,
+          data_buscar_produto: formData.dataReserva // Enviando o nome correto do campo
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao enviar os dados');
+      }
+
+      const data = await response.json();
+      alert('Formulário enviado com sucesso!'); // Mensagem de sucesso
+      console.log('Usuário criado:', data); // Exibe o usuário retornado
+    } catch (error) {
+      console.error('Erro ao enviar o formulário:', error);
+      alert('Erro ao enviar o formulário');
+    }
   };
 
   return (
     <div className="page">
-      <h1 class="titR">Página de Reserva</h1>
+      <h1 className="titR">Página de Reserva</h1>
 
       {/* Caixa do Formulário */}
       <div className="form-container">
-        <h2 class="titRdois">Preencha suas informações</h2>
+        <h2 className="titRdois">Preencha suas informações</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="nome">Nome:</label>
