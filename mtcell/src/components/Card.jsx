@@ -10,7 +10,9 @@ function Card() {
                 </h3>
                 <button className="botao_desconto">
                     Ganhar desconto 
+                <a href="https://wa.me/556185490894">
                 <img src="src/img/DescontoIcon.png" alt="Ícone de desconto" className="icon_desconto"/>
+                </a>
                 </button>
 
 
